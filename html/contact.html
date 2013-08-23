@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.png">
+
+    <title>Freeport Kayak Rentals</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Navigation Bar -->
+      <div class="masthead">
+        <h3 class="text-muted">Freeport Kayak Rentals</h3>
+        <ul class="nav nav-justified">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reservations.html">Make a Reservation</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="what_to_bring.html">What to Bring</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Header Paragraph -->
+      <div class="page-header">
+        <h1>Contact us!</h1>
+        <p class="lead">Feel free to give us a call at 1-855-WE-KAYAK or fill out the message form below to get in touch with us!</p>
+      </div>
+
+      <!-- Reservation form -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Send a message <span class="text-muted"></span></h2>
+
+          <!-- Reservation form -->
+          <form class="form-horizontal" method="post" action="../php/contact_email.php">
+            <fieldset>
+
+            <!-- Name -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Name</label>
+              <div class="controls">
+                <input id="textinput" name="name" type="text" placeholder="Name" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Email address-->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Email Address</label>
+              <div class="controls">
+                <input id="textinput" name="email_address" type="text" placeholder="Email" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Phone number-->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Phone Number</label>
+              <div class="controls">
+                <input id="textinput" name="phone_number" type="text" placeholder="Phone" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="navbar-form">
+              <label class="control-label" for="textarea">Message</label>
+              <div class="controls">                     
+                <textarea id="textarea" name="message" placeholder="Enter text here."></textarea>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="navbar-form">
+              <div class="controls">
+                <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-lg btn-success">Send</button>
+              </div>
+            </div> 
+
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="../images/waterfront_park.png">
+        </div>
+      </div>
+
+      <!-- END FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Freeport Kayak Rentals, Inc. &middot; S Long Beach Ave, Freeport, NY, 11520 &middot; 1-855-WE-KAYAK</p>
+      </footer>
+    </div>
+
+  </body>
+</html>

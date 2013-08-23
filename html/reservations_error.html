@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.png">
+
+    <title>Freeport Kayak Rentals</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Navigation Bar -->
+      <div class="masthead">
+        <h3 class="text-muted">Freeport Kayak Rentals</h3>
+        <ul class="nav nav-justified">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="reservations.html">Make a Reservation</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="what_to_bring.html">What to Bring</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Header Paragraph -->
+      <div class="page-header">
+        <h1>Reservations</h1>
+        <p class="lead">Spend a few hours or the whole day paddling our beautiful calm bays, catching some rays, and discovering the natural beauty of our local waterways. Make a reservation and we will meet you at Waterfront Park with your Kayaks ready to go!</p>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <!-- Make a reservation -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Make a reservation <span class="text-muted">Error: incomplete form</span></h2>
+          <p class="lead"><small>Please complete entire form before submitting.</small></p>
+          <!-- Reservation form -->
+          <form class="form-horizontal" method="post" action="../php/reservations_email.php">
+            <fieldset>
+
+            <!-- First Name -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">First Name</label>
+              <div class="controls">
+                <input id="textinput" name="first_name" type="text" placeholder="First" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Last Name</label>
+              <div class="controls">
+                <input id="textinput" name="last_name" type="text" placeholder="Last" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Email Address</label>
+              <div class="controls">
+                <input id="textinput" name="email_address" type="text" placeholder="Email" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Phone Number</label>
+              <div class="controls">
+                <input id="textinput" name="phone_number" type="text" placeholder="Phone" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Number of paddlers -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Number of Paddlers</label>
+              <div class="controls">
+                <input id="textinput" name="paddler_count" type="text" placeholder="Number" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Kayaks or SUPs -->
+            <div class="navbar-form">
+              <label class="control-label" for="checkboxes">Boats</label>
+              <div class="controls">
+                <label class="checkbox" for="checkboxes-0">
+                  <input type="checkbox" name="kayaks" id="checkboxes-0" value="yes">
+                  Kayaks
+                </label>
+                <label class="checkbox" for="checkboxes-1">
+                  <input type="checkbox" name="SUPs" id="checkboxes-1" value="yes">
+                  SUPs
+                </label>
+              </div>
+            </div>
+
+            <!-- Date -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Date</label>
+              <div class="controls">
+                <input id="textinput" name="date" type="text" placeholder="Month Day" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Start Time -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">Start Time</label>
+              <div class="controls">
+                <input id="textinput" name="start_time" type="text" placeholder="time" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- End time -->
+            <div class="navbar-form">
+              <label class="control-label" for="textinput">End Time</label>
+              <div class="controls">
+                <input id="textinput" name="end_time" type="text" placeholder="time" class="input-xlarge">
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="navbar-form">
+              <div class="controls">
+                <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-lg btn-success">Submit</button>
+              </div>
+            </div>
+
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="../images/weeds.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- END FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Freeport Kayak Rentals, Inc. &middot; S Long Beach Ave, Freeport, NY, 11520 &middot; 1-855-WE-KAYAK</p>
+      </footer>
+    </div>
+
+  </body>
+</html>
